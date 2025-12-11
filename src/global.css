@@ -1,0 +1,83 @@
+/* src/global.css */
+
+/* ----------------------------- */
+/* 🧼 Basic Reset & Defaults     */
+/* ----------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------------- */
+/* 🌍 Global Settings            */
+/* ----------------------------- */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f9fafb;
+    color: #111827;
+    line-height: 1.6;
+}
+
+/* ----------------------------- */
+/* 🔗 Links                     */
+/* ----------------------------- */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+/* ----------------------------- */
+/* 🔘 Buttons                   */
+/* ----------------------------- */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #a7baf8;
+    transform: translateY(-1px);
+}
+
+/* ----------------------------- */
+/* 🧭 Layout Helpers             */
+/* ----------------------------- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ----------------------------- */
+/* 📱 Responsive Utilities        */
+/* ----------------------------- */
+@media (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+    }
+}
